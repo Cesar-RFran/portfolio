@@ -238,6 +238,13 @@ html{
     padding: 20px 0;
 
 }
+.skills h4{
+    font-size: 40px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
 .skills .fila{
     display: flex;
 }
