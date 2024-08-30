@@ -13,16 +13,16 @@
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">Cesar</a>
+                <a href="#" class="hover-color">Cesar</a>
             </div>
             <nav id="nav">
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
                     <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <!-- <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li> -->
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -38,7 +38,7 @@
                 <img src="img/hero2.png" alt="">
             </div>
             <h1>CESAR RODRIGUEZ</h1>
-            <h2>Ingeniero en Sistemas - Conocimentos Basicos UI/UX</h2>
+            <h2><span class="span-b">Systems Engineer </span><span class="span-c">- Frontend Developer UI/UX</span></h2>
             <div class="redes">
                 <a href="https://www.linkedin.com/in/cesar-rodriguez-franco-3632682b0/"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://github.com/proyectprogramacionweb" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -53,20 +53,26 @@
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p>Hola, soy Cesar un Ingenierio en sistemas Computacionales no soy un robot, <span> soy un desarrollador Front-End </span><span1>apasionado por la programacion web y movil </span1></p>
+            <h2>About Me</h2>
+            <p>Hello, I'm Cesar, a Computer Systems Engineer, and I'm not a robot :) . 
+                <span> I'm a Front-End Developer </span> 
+                <span class="passionate">Passionate about web and mobile programming.</span>
+            </p>
+        </div>
+        
+            
 
             <div class="fila">
                 <!-- datos personales -->
                 <div class="col">
-                    <h3>Datos Personales</h3>
+                    <h3>Personal Data</h3>
                     <ul>
                         <li>
                             <!-- <strong>Cumpleaños</strong>
                             15-01-1980 -->
                         </li>
                         <li>
-                            <strong>Teléfono</strong>
+                            <strong>Phone</strong>
                             +52 7351018174
                         </li>
                         <li>
@@ -82,7 +88,7 @@
                             123 San Luis, Argentina -->
                         </li>
                         <li>
-                            <strong>Cargo</strong>
+                            <strong>Position</strong>
                             <span>FREELANCE</span>
                         </li>
                     </ul>
@@ -94,27 +100,27 @@
                     <div class="contenedor-intereses">
                         <div class="interes">
                             <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span>
+                            <span>GAMES</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
+                            <span>MUSIC</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
+                            <span>TRIPS</span>
                         </div>
                         
                         <div class="interes">
                             <i class="fa-solid fa-person-hiking"></i>
-                            <span>DEPORTE</span>
+                            <span>SPORT</span>
                         </div>
                         
                     </div>
                 </div>
             </div>
             <button onclick="window.location.href='ruta/del/CV.pdf'">
-                Descargar CV <i class="fa-solid fa-download"></i>
+                Dowload CV <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
             </button>
         </div>
@@ -124,11 +130,10 @@
     <section class="skills" id="skills">
         <div class="contenido-seccion">
             <h2>Skills</h2>
-            <h3>Lenguajes, frameworks, tecnologías y herramientas</h3>
             <hr>
     
             <!-- Lenguajes -->
-            <h4>Lenguajes</h4>
+            <h4>Languages</h4>
             <div class="fila fila-4">
                 <div class="skill">
                     <img class="icono-grande" src="/img/js.svg" alt="JavaScript Logo">
@@ -144,8 +149,8 @@
                 </div>
             </div>
     
-            <!-- Frameworks y Librerías -->
-            <h4>Frameworks y Librerías</h4>
+            <!-- Frameworks-->
+            <h4>Frameworks</h4>
             <div class="fila fila-3">
                 <div class="skill">
                     <img class="icono-grande" src="/img/react2.svg" alt="React Logo">
@@ -159,7 +164,7 @@
             </div>
     
             <!-- Tecnologías y Herramientas -->
-            <h4>Tecnologías y Herramientas</h4>
+            <h4>Technologies and Tools</h4>
             <div class="fila fila-3">
                 <div class="skill">
                     <img class="icono-grande" src="/img/github2.svg" alt="GitHub Logo">
@@ -170,6 +175,30 @@
                 <div class="skill">
                     <img class="icono-grande" src="/img/Figma-logo.svg" alt="Figma Logo">
                 </div>
+            </div>
+
+            <!-- Software -->
+            <h4>Software</h4>
+            <div class="fila fila-3">
+                <div class="skill">
+                    <img class="icono-grande" src="/img/code.svg" alt="Visual Logo">
+                </div>
+                <div class="skill">
+                    <img width="96" height="96" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/external-postman-is-the-only-complete-api-development-environment-logo-shadow-tal-revivo.png" alt="external-postman-is-the-only-complete-api-development-environment-logo-shadow-tal-revivo"/>
+                </div>
+                <div class="skill">
+                    <img width="100" height="100" src="https://img.icons8.com/color/96/mongo-db.png" alt="mongo-db"/>
+                </div>
+                <div class="skill">
+                    <img class="icono-grande" src="/img/eclipse.svg" alt="Git Logo">
+                </div>
+                <div class="skill">
+                    <img class="icono-grande" src="/img/git.svg" alt="Git Logo">
+                </div>
+                <div class="skill">
+                    <img class="icono-grande" src="/img/firebase.svg" alt="FireBase Logo">
+                </div>
+                
             </div>
         </div>
     </section>
@@ -250,7 +279,7 @@
     <!-- SECCION PORTFOLIO -->
 <section id="portfolio" class="portfolio">
     <div class="contenido-seccion">
-        <h2>PORTAFOLIO</h2>
+        <h2>PORTFOLIO</h2>
         <div class="galeria">
             <div class="proyecto">
                 <img src="img/buscador de gifs2.png" alt="Buscador de GIFs desarrollado con React">
@@ -314,13 +343,18 @@
             <!-- <a href="#"><i class="fa-brands fa-facebook-f"></i></a> -->
             <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
             <!-- <a href="#"><i class="fa-brands fa-skype"></i></a> -->
-            <a href="https://www.linkedin.com/in/cesar-rodriguez-franco-3632682b0/"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/proyectprogramacionweb" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="mailto:cesarfranco32@gmail.com.com">
-                <i class="far fa-envelope"></i> 
+            <a href="https://www.linkedin.com/in/cesar-rodriguez-franco-3632682b0/" class="hover">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/proyectprogramacionweb" target="_blank" class="hover">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:cesarfranco32@gmail.com.com" class="hover">
+                <i class="far fa-envelope"></i>
             </a>
         </div>
     </footer>
+    
 
     <script src="script.js"></script>
 </body>
