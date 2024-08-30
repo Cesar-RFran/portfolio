@@ -214,10 +214,19 @@ html{
     width: 100%;
 }
 /* SECCION S K I L L S */
+.skill{
+    font-size: 25px;
+    display: flexbox;
+    
+}
 .skills{
     background-color: #252A2E;
     color: #fff;
     padding: 50px 20px;
+    margin: auto;
+    text-align: center;
+
+    
     
 }
 .skills .contenido-seccion{
@@ -247,6 +256,7 @@ html{
 }
 .skills .fila{
     display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si hay falta de espacio */
 }
 .skills .fila .col{
     width: 50%;
@@ -261,11 +271,52 @@ html{
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
+    text-align: center;
 }
+
+/* Estilos de las filas usando Flexbox */
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centra los elementos en cada fila */
+    margin-bottom: 20px;
+}
+
+/* Distribución específica para cada fila */
+.fila-4 {
+    justify-content: space-between; /* Distribución con 4 íconos */
+}
+
+.fila-3 {
+    justify-content: space-around; /* Distribución con 3 íconos */
+}
+
+/* Estilo de los íconos */
+.icono-grande {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s;
+}
+
+.icono-grande:hover {
+    transform: scale(1.1);
+}
+
+/***FILA DE LOS WRAPS***/
+
+/* Opcional: estilos adicionales para los contenedores de los íconos */
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 80px; /* Flexibilidad para ajustar el tamaño */
+}
+
+
 .skills .skill .barra-skill{
-    height: 8px;
-    width: 80%;
-    background-color: #131517;
+    height: 0px;
+    width: 0;
     position: relative;
     margin-bottom: 30px;
 }
@@ -275,109 +326,94 @@ html{
     top: 0;
     left: 0;
     height: 8px;
+    display: flex;
 }
-.skills .skill .barra-skill span{
-    position: absolute;
-    height: 40px;
+
+.skills .barra-skill {
+    height: 500px; /* Aumenta la altura si es necesario para los íconos */
+    width: 80%;
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.skills .progreso {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .progreso img {
+    height: 40px; /* Tamaño del ícono */
     width: 40px;
-    background-color: #0984e3;
-    border-radius: 50px;
-    line-height: 40px;
-    text-align: center;
-    top: -17px;
-    right: -15px;
-    font-size: 14px;
+    object-fit: contain;
+    margin: 0 auto;
+    margin-top: 10px;
 }
+
 /* Estas clases se agregaran dinamicamente mediante javascript */
 .skills .skill .javascript{
     width: 0%;
     animation: 2s javascript forwards;
 }
-@keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 75%;}
-}
+
 
 .skills .skill .htmlcss{
     width: 0%;
     animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 89%;}
 }
 
 .skills .skill .photoshop{
     width: 0%;
     animation: 2s photoshop forwards;
 }
-@keyframes photoshop {
-    0%{width: 0%;}
-    100%{width: 95%;}
-}
+
 
 .skills .skill .wordpress{
     width: 0%;
     animation: 2s wordpress forwards;
 }
-@keyframes wordpress {
-    0%{width: 0%;}
-    100%{width: 81%;}
-}
+
 
 .skills .skill .drupal{
     width: 0%;
     animation: 2s drupal forwards;
 }
-@keyframes drupal {
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
+
 
 .skills .skill .comunicacion{
     width: 0%;
     animation: 2s comunicacion forwards;
 }
-@keyframes comunicacion {
-    0%{width: 0%;}
-    100%{width: 80%;}
-}
+
 
 .skills .skill .trabajo{
         width: 0%;
         animation: 2s trabajo forwards;
     }
-    @keyframes trabajo {
-        0%{width: 0%;}
-        100%{width: 70%;}
-    }
+    
 
     .skills .skill .creatividad{
         width: 0%;
         animation: 2s creatividad forwards;
     }
-    @keyframes creatividad {
-        0%{width: 0%;}
-        100%{width: 99%;}
-    }
+    
 
     .skills .skill .dedicacion{
         width: 0%;
         animation: 2s dedicacion forwards;
     }
-    @keyframes dedicacion {
-        0%{width: 0%;}
-        100%{width: 65%;}
-    }
+    
 
     .skills .skill .proyect{
         width: 0%;
         animation: 2s proyect forwards;
     }
-    @keyframes proyect {
-        0%{width: 0%;}
-        100%{width: 94%;}
-    }
+    
 /* SECCION CURRICULUM */
 .curriculum{
     background-color: #1e2326;
