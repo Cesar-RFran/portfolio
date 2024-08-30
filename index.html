@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
+    <title>Portafolio</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -42,7 +42,7 @@
             <div class="redes">
                 <a href="https://www.linkedin.com/in/cesar-rodriguez-franco-3632682b0/"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://github.com/proyectprogramacionweb" target="_blank"><i class="fa-brands fa-github"></i></a>
-                 <a href="mailto:cesarfranco32@gmail.com.com"> 
+                 <a href="mailto:cesarfranco32@gmail.com."> 
                     <i class="far fa-envelope"></i> 
                     </a>
                 <!-- <a href="#"><i class="fa-solid fa-rss"></i></a> -->
@@ -113,7 +113,7 @@
                     </div>
                 </div>
             </div>
-            <button>
+            <button onclick="window.location.href='ruta/del/CV.pdf'">
                 Descargar CV <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
             </button>
@@ -248,92 +248,62 @@
     </section> -->
 
     <!-- SECCION PORTFOLIO -->
-    <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2>PORTAFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="img/p1.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
+<section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>PORTAFOLIO</h2>
+        <div class="galeria">
+            <div class="proyecto">
+                <img src="img/buscador de gifs2.png" alt="Buscador de GIFs desarrollado con React">
+                <div class="overlay">
+                    <h3>Buscador de GIFs</h3>
+                    <p>Aplicación desarrollada en React con fetch API.</p>
+                    <a href="https://buscador-imagenes-react.netlify.app" class="btn-ver-proyecto">Buscador de Gifs</a>
                 </div>
-                <div class="proyecto">
-                    <img src="img/p2.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/cotizador.png" alt="Cotizador de seguros desarrollado con JavaScript">
+                <div class="overlay">
+                    <h3>Cotizador de Seguros</h3>
+                    <p>Aplicación para cotizar prestamos utilizando JavaScript y APIs.</p>
+                    <a href="https://cotizador-de-prestamos-crf.netlify.app" class="btn-ver-proyecto">Cotizador de prestamos</a>
                 </div>
-                <div class="proyecto">
-                    <img src="img/p3.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/criptomonedas.png" alt="Aplicación de precios de criptomonedas desarrollada con React">
+                <div class="overlay">
+                    <h3>Precios de Criptomonedas</h3>
+                    <p>Aplicación en JS utilizando API de criptomonedas.</p>
+                    <a href="https://lucky-biscuit-9402bf.netlify.app" class="btn-ver-proyecto">Cotizador Criptomonedas</a>
                 </div>
-                <div class="proyecto">
-                    <img src="img/p4.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/veterinaria.png" alt="Sistema de gestión veterinaria desarrollado con JavaScript">
+                <div class="overlay">
+                    <h3>Gestión Veterinaria</h3>
+                    <p>Sistema de administración de citas y clientes para veterinarias.</p>
+                    <a href="https://voluble-pasca-6240a9.netlify.app" class="btn-ver-proyecto">Seguimiento y Pacientes</a>
                 </div>
-                <div class="proyecto">
-                    <img src="img/p5.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/carrito.png" alt="Carrito de compras desarrollado con JavaScript">
+                <div class="overlay">
+                    <h3>Carrito de Compras</h3>
+                    <p>Aplicación de carrito de compras con funcionalidades de agregar y eliminar productos.</p>
+                    <a href="#" class="btn-ver-proyecto">Carrito</a>
                 </div>
-                <div class="proyecto">
-                    <img src="img/p6.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/calendario.png" alt="Aplicación de calendario y agenda personal">
+                <div class="overlay">
+                    <h3>Calendario y Agenda</h3>
+                    <p>Calendario se utilizo Firebase, Node, Postman Reacct JS.</p>
+                    <a href="https://react-mern-backend-productive.up.railway.app/auth/login" class="btn-ver-proyecto">Calendario</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- SECCION CONTACTO -->
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
-                <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
-                </div>
-                <!-- Mapa -->
-                <div class="col">
-                    <img src="img/ubicacion.png" alt="">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Llamanos: <span>7351018174</span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: <span>cesarfranco32@gmail.com</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- footer -->
     <footer>
@@ -348,7 +318,7 @@
             <a href="https://github.com/proyectprogramacionweb" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="mailto:cesarfranco32@gmail.com.com">
                 <i class="far fa-envelope"></i> 
-            <!-- <a href="#"><i class="fa-solid fa-rss"></i></a> -->
+            </a>
         </div>
     </footer>
 
