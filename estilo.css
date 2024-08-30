@@ -234,8 +234,12 @@ html{
 .skill{
     font-size: 25px;
     display: flexbox;
+    flex: 1; /* Hace que todas las columnas tengan el mismo ancho */
+    min-width: 150px; /* Ajusta el ancho mínimo de las columnas */
     
 }
+
+
 .skills{
     background-color: #252A2E;
     color: #fff;
@@ -296,8 +300,11 @@ html{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center; /* Centra los elementos en cada fila */
+    justify-content: center; 
     margin-bottom: 20px;
+}
+.problem-solving {
+    margin-left: 30px; /* Mueve solo la columna de Problem-Solving */
 }
 
 /* Distribución específica para cada fila */
@@ -429,6 +436,38 @@ html{
     .skills .skill .proyect{
         width: 0%;
         animation: 2s proyect forwards;
+    }
+
+    .technical-skills{
+        margin-top: 50px;
+    }
+
+    .skills-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 5fr);
+        gap: 10px;
+    }
+    
+    .skills-list li {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-size: 25px;
+        color: white;
+    }
+    
+    .skills-list i {
+        color: #4CAF50; 
+    }
+    
+    .tech-skill {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
     }
     
 /* SECCION CURRICULUM */
