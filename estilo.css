@@ -846,3 +846,29 @@ footer .arriba{
     color: #0984e3; 
     transition: color 0.3s ease; 
 }
+
+.language-switch {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.language-switch button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.language-switch button:hover {
+    color: #0984e3;
+}
+
+.language-switch button:hover {
+    background-color: #555;
+}
+

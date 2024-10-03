@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/portafolio.png">
     <title>Portafolio</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
@@ -12,6 +13,8 @@
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
+           
+
             <div class="logo">
                 <a href="#" class="hover-color">Cesar</a>
             </div>
@@ -28,6 +31,11 @@
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
+             <!-- Botón para cambiar el idioma -->
+        <div class="language-switch">
+            <button id="btn-en" onclick="cambiarIdioma('en')">EN</button>
+            <button id="btn-es" onclick="cambiarIdioma('es')">ES</button>
+        </div>
         </header>
     </div>
 
@@ -41,7 +49,7 @@
             <h2><span class="span-b">Systems Engineer </span><span class="span-c">- Frontend Developer UI/UX</span></h2>
             <div class="redes">
                 <a href="https://www.linkedin.com/in/cesar-rodriguez-franco-3632682b0/"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/proyectprogramacionweb" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/Cesar-RFran" target="_blank"><i class="fa-brands fa-github"></i></a>
                  <a href="mailto:cesarfranco32@gmail.com"> 
                     <i class="far fa-envelope"></i> 
                     </a>
@@ -76,19 +84,19 @@
                 <div class="contenedor-intereses">
                     <div class="interes">
                         <i class="fa-solid fa-gamepad"></i>
-                        <span>GAMES</span>
+                        <span class="span-games">GAMES</span>
                     </div>
                     <div class="interes">
                         <i class="fa-solid fa-headphones"></i>
-                        <span>MUSIC</span>
+                        <span class="span-music">MUSIC</span>
                     </div>
                     <div class="interes">
                         <i class="fa-solid fa-plane"></i>
-                        <span>TRIPS</span>
+                        <span class="span-trips">TRIPS</span>
                     </div>
                     <div class="interes">
                         <i class="fa-solid fa-person-hiking"></i>
-                        <span>SPORT</span>
+                        <span class="span-sport">SPORT</span>
                     </div>
                 </div>
             </div>
@@ -141,7 +149,7 @@
             </div>
     
             <!-- Tecnologías y Herramientas -->
-            <h4>Technologies and Tools</h4>
+            <h4 class="span-tecnologies">Technologies and Tools</h4>
             <div class="fila fila-3">
                 <div class="skill">
                     <img class="icono-grande" src="/img/github2.svg" alt="GitHub Logo">
@@ -217,7 +225,7 @@
                             <h2>Curriculum</h2>
                             <div class="fila">
                                 <div class="col izquierda">
-                                    <h3>Education</h3>
+                                    <h3 class="span-education">Education</h3>
                                     <div class="item izq">
                                         <h4>Computational Systems Enginer </h4>
                                         <span class="casa">Instituto Tecnologico Nacional de Mexico</span>
@@ -241,7 +249,7 @@
                                 </div>
 
                                 <div class="col derecha">
-                                    <h3>Work Experience</h3>
+                                    <h3 class="span-experience">Work Experience</h3>
                                     <div class="item der">
                                         <h4>Front Developer</h4>
                                         <span class="casa">Morales Cortes y Asociados</span>
@@ -332,11 +340,11 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Your Name:">
-                    <input type="text" placeholder="Your phone number:">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Affair">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <input class="your-name" type="text" placeholder="Your Name:">
+                    <input class="your-phone" type="text" placeholder="Your phone number:">
+                    <input type="text" placeholder="Email:">
+                    <input class="your-affair" type="text" placeholder="Affair">
+                    <textarea class="your-message" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
                     <button>
                         Send Message<i class="fa-solid fa-paper-plane"></i>
                         <span class="overlay"></span>
@@ -351,8 +359,9 @@
                             
                             <li>
                                 <i class="fa-solid fa-mobile-screen"></i>
-                                Phone: <strong>(52) 735-101-8174</strong>
+                                <span class="phone-label">Phone:</span> <strong class="strong-phone2">(52) 735-101-8174</strong>
                             </li>
+                            
                             <li>
                                 <i class="fa-solid fa-envelope"></i>
                                 Email: <strong>cesarfranco32@gmail.com</strong>
@@ -377,7 +386,7 @@
             <a href="https://www.linkedin.com/in/cesar-rodriguez-franco-3632682b0/" class="hover">
                 <i class="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/proyectprogramacionweb" target="_blank" class="hover">
+            <a href="https://github.com/Cesar-RFran" target="_blank" class="hover">
                 <i class="fa-brands fa-github"></i>
             </a>
             <a href="mailto:cesarfranco32@gmail.com" class="hover">
