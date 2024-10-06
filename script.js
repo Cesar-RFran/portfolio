@@ -148,6 +148,35 @@ function cambiarIdioma(idioma) {
     document.querySelector(".contacto h2").textContent = textos[idioma].contactTitle;
 
     document.querySelector(".contacto button").textContent = textos[idioma].sendMessage;
+
+    document.querySelector('.br-class + p').textContent = idioma === 'es' 
+    ? 'Mi nombre es César, y recientemente me gradué del Instituto Tecnológico de Cuautla. Como parte de mis estudios, completé un proyecto significativo enfocado en el sector salud de un hospital. Este proyecto consistió en desarrollar un frontend web para el sistema del hospital. Esta experiencia no solo mejoró mis habilidades en desarrollo frontend, sino que también me proporcionó valiosos conocimientos sobre la gestión y operaciones de clínicas y hospitales. Estoy ansioso por aplicar lo que he aprendido y contribuir a futuras oportunidades en este campo.' 
+
+    : 'My name is Cesar, and I recently graduated from Cuatla Technological Institute. As part of my studies, I completed a significant project focused on the healthcare sector of a hospital. This project involved developing a web frontend for the hospitals system. This experience not only enhanced my skills in frontend web development but also provided me with valuable insights into the management and operations of clinics and hospitals. I am eager to apply what I have learned and contribute to future opportunities in this field.';
+
+    document.querySelector('.front-dev').textContent = idioma === 'es' ? 'Desarrollador Front:' : 'Front Developer:';
+
+
+    document.querySelector('.br-class2 + p').textContent = idioma === 'es' 
+    ? 'Desarrollé un sistema administrativo basado en la web para la gestión de clínicas, adaptable a dispositivos móviles. Las características clave incluyeron: control de acceso basado en roles para diferentes secciones según las credenciales de usuario, gestión de actividades médicas para la programación de citas, solicitud de pruebas, verificación de disponibilidad de habitaciones y mantenimiento de registros del personal. Herramientas de comunicación mejoradas para interacciones entre el personal en diversos roles.' 
+
+    :'Developed a web-based administrative system for clinic management with mobile adaptability. Key features included:Role-based access control for different sections based on user credentials. Medical activity management for scheduling appointments, requesting tests, checking room availability, and maintaining staff records.Enhanced communication tools for inter-staff interactions across various roles';
+
+
+    document.querySelector('.ux-des').textContent = idioma === 'es' ? 'Diseñador UX:' : 'UX Design:';
+
+    document.querySelector('.ux-desing2 + p').textContent = idioma === 'es' 
+    ? 'Certificado en UX de Google en colaboración con Coursera' :'Google UX Certificate in collaboration with Coursera';
+
+    document.querySelector('.project-2 + p').textContent = idioma === 'es' 
+    ? 'El proyecto integró Firebase Firestore para mejorar la escalabilidad, utilizando frameworks de interfaz de usuario como Bootstrap o Tailwind CSS, añadiendo componentes interactivos como FullCalendar, implementando Firebase Authentication para la gestión de usuarios, incorporando notificaciones push, optimizando el backend con Node.js y Express, utilizando React para un frontend dinámico, automatizando pruebas y monitoreo, y estableciendo pipelines de CI/CD para un despliegue y mantenimiento eficientes.'
+    
+    : 'The project involved integrating Firebase Firestore for better scalability, using UI frameworks like Bootstrap or Tailwind CSS, adding interactive components like FullCalendar, implementing Firebase Authentication for user management, incorporating push notifications, optimizing the backend with Node.js and Express, utilizing React for a dynamic frontend, automating testing and monitoring, and setting up CI/CD pipelines for efficient deployment and maintenance.';
+
+    document.querySelector('.project-22').textContent = idioma === 'es' ? 'Desarrollador Front:' : 'Front Developer:';
+
+
+
 }
 
 
