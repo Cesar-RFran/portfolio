@@ -74,7 +74,7 @@ const textos = {
         portfolio: "PORTAFOLIO",
         contacto: "CONTACTO",
         aboutMeTitle: "Sobre Mí",
-        aboutMeText: "Hola, soy César, Ingeniero en Sistemas Computacionales, y no soy un bot. Soy un Desarrollador Front-End apasionado por la programación web y móvil.",
+        aboutMeText: "Hola, soy César, Ingeniero en Sistemas Computacionales, y no soy un Robot. Soy un Desarrollador Front-End apasionado por la programación web y móvil.",
         personalData: "Datos Personales",
         interests: "Intereses",
         downloadCV: "Descargar CV",
@@ -117,6 +117,10 @@ function cambiarIdioma(idioma) {
     document.querySelector(".sobremi .col:nth-child(2) h3").textContent = textos[idioma].interests;
     
     // Cambio del texto del título con span
+    
+
+    document.querySelector('.phon  strong').textContent = idioma === 'es' ? 'Telefono' : 'Phon';
+    document.querySelector('.position  strong').textContent = idioma === 'es' ? 'Puesto' : 'Position';
     document.querySelector('.span-b').textContent = idioma === 'es' ? 'Ingeniero en Sistemas' : 'Systems Engineer';
     document.querySelector('.span-c').textContent = idioma === 'es' ? ' - Desarrollador Frontend UI/UX' : ' - Frontend Developer UI/UX';
     document.querySelector('.span-games').textContent = idioma === 'es' ? 'JUEGOS' : 'GAMES';
@@ -148,6 +152,9 @@ function cambiarIdioma(idioma) {
     document.querySelector(".contacto h2").textContent = textos[idioma].contactTitle;
 
     document.querySelector(".contacto button").textContent = textos[idioma].sendMessage;
+
+    document.querySelector('.computacional-systems').textContent = idioma === 'es' ? 'Ingeniería en Sistemas Computacionales:' : 'Computer Systems Engineering:';
+
 
     document.querySelector('.br-class + p').textContent = idioma === 'es' 
     ? 'Mi nombre es César, y recientemente me gradué del Instituto Tecnológico de Cuautla. Como parte de mis estudios, completé un proyecto significativo enfocado en el sector salud de un hospital. Este proyecto consistió en desarrollar un frontend web para el sistema del hospital. Esta experiencia no solo mejoró mis habilidades en desarrollo frontend, sino que también me proporcionó valiosos conocimientos sobre la gestión y operaciones de clínicas y hospitales. Estoy ansioso por aplicar lo que he aprendido y contribuir a futuras oportunidades en este campo.' 

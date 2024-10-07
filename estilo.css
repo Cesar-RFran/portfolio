@@ -62,10 +62,16 @@ html{
     color: #0984e3;
 }
 
-.passionate {
+.contenido-seccion .passionate {
     color: #fd79a8 !important; 
-
 }
+
+.contenido-seccion .frontend-dev {
+    color: #0984e3; 
+}
+
+
+
 
 .span-c{
    color: #fd79a8
