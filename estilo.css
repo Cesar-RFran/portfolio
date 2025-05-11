@@ -1,4 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+:root {
+    --primary-color: #0984e3;
+    --secondary-color: #fd79a8;
+    --background-color: #1e2326;
+    --text-color: #fff;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    --primary-color: #1e90ff; /* Cambia los colores según el diseño */
+    --secondary-color: #ff6b81;
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode nav ul li a {
+    color: var(--text-color);
+}
+
+body.dark-mode button {
+    background-color: #333;
+    color: var(--text-color);
+}
+
+body.dark-mode .language-switch button:hover {
+    background-color: #555;
+    color: var(--primary-color);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
 *{
     box-sizing: border-box;
     font-family: 'Work Sans';
@@ -876,5 +916,11 @@ footer .arriba{
 
 .language-switch button:hover {
     background-color: #555;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease;
 }
 

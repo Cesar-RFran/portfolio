@@ -34,6 +34,17 @@ function efectoHabilidades(){
     }
 }
 
+// Función para enviar el formulario de contacto
+function validarFormulario() {
+    const nombre = document.querySelector('.your-name').value.trim();
+    const email = document.querySelector('.your-phone').value.trim();
+    if (!nombre || !email) {
+        alert('Por favor, completa todos los campos.');
+        return false;
+    }
+    return true;
+}
+
 // Textos en ambos idiomas
 const textos = {
     en: {
@@ -182,18 +193,30 @@ function cambiarIdioma(idioma) {
 
     document.querySelector('.project-22').textContent = idioma === 'es' ? 'Desarrollador Front:' : 'Front Developer:';
 
-
-
 }
-
-
-
 // Función para alternar entre inglés y español
 function toggleLanguage() {
     idiomaActual = idiomaActual === 'en' ? 'es' : 'en';
     cambiarIdioma(idiomaActual);
     document.getElementById("language-btn").textContent = idiomaActual === 'en' ? 'EN | ES' : 'ES | EN';
 }
+
+// Función para alternar entre Dark Mode y Light Mode
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+
+    // Guardar la preferencia en localStorage
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
+}
+
+// Inicialización: Aplicar el modo oscuro si está guardado en localStorage
+document.addEventListener("DOMContentLoaded", function () {
+    const darkModePreference = localStorage.getItem('darkMode');
+    if (darkModePreference === 'enabled') {
+        document.body.classList.add('dark-mode');
+    }
+});
 
 // Inicialización
 document.addEventListener("DOMContentLoaded", function() {
@@ -202,8 +225,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
 //detecto el scrolling para aplicar la animacion de la barra de habilidades
 window.onscroll = function(){
     efectoHabilidades();
-} 
+}
