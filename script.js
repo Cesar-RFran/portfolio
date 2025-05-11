@@ -275,6 +275,26 @@ document.addEventListener("DOMContentLoaded", function() {
     cambiarIdioma(idiomaActual); // Establece el idioma inicial
 });
 
+// Preloader
+document.addEventListener('DOMContentLoaded', () => {
+    const preloader = document.querySelector('.preloader');
+    const content = document.querySelector('body > *:not(.preloader)');
+    
+    // Ocultar el preloader después de que todo se haya cargado
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            preloader.classList.add('hidden');
+            // Añadir clase para mostrar el contenido con fade
+            content.classList.add('content-fade');
+            setTimeout(() => {
+                content.classList.add('visible');
+                // Remover el preloader del DOM
+                preloader.remove();
+            }, 500);
+        }, 1000); // Ajusta este tiempo según lo desees
+    });
+});
+
 //detecto el scrolling para aplicar la animacion de la barra de habilidades
 window.onscroll = function(){
     efectoHabilidades();
