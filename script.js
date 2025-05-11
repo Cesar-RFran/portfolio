@@ -204,10 +204,39 @@ function toggleLanguage() {
 // Función para alternar entre Dark Mode y Light Mode
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
-
+    
+    // Añadir transición suave
+    document.body.style.transition = 'background-color 0.3s, color 0.3s';
+    
     // Guardar la preferencia en localStorage
     const isDarkMode = document.body.classList.contains('dark-mode');
     localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
+    
+    // Actualizar el texto del botón
+    const button = document.querySelector('.dark-mode-switch button');
+    button.textContent = isDarkMode ? 'Light Mode' : 'Dark Mode';
+}
+
+// Función para alternar modo claro
+function toggleLightMode() {
+    document.body.classList.toggle('light-mode');
+    
+    // Añadir transición suave
+    document.body.style.transition = 'background-color 0.3s, color 0.3s';
+    
+    // Guardar la preferencia en localStorage
+    const isLightMode = document.body.classList.contains('light-mode');
+    localStorage.setItem('lightMode', isLightMode ? 'enabled' : 'disabled');
+    
+    // Cambiar solo el icono
+    const icon = document.querySelector('.theme-switch i');
+    if (isLightMode) {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+    } else {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+    }
 }
 
 // Inicialización: Aplicar el modo oscuro si está guardado en localStorage
@@ -218,12 +247,33 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+// Inicialización del modo
+document.addEventListener('DOMContentLoaded', function() {
+    const lightModePreference = localStorage.getItem('lightMode');
+    if (lightModePreference === 'enabled') {
+        document.body.classList.add('light-mode');
+        const button = document.querySelector('.theme-switch');
+        const icon = button.querySelector('i');
+        const text = button.querySelector('span');
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+        // text.textContent = 'Dark Mode';
+    }
+});
+
+// Inicialización: Aplicar el modo claro si está guardado en localStorage
+document.addEventListener("DOMContentLoaded", function () {
+    const lightModePreference = localStorage.getItem('lightMode');
+    if (lightModePreference === 'enabled') {
+        document.body.classList.add('light-mode');
+        document.querySelector('.light-mode-switch button').textContent = 'Dark Mode';
+    }
+});
+
 // Inicialización
 document.addEventListener("DOMContentLoaded", function() {
     cambiarIdioma(idiomaActual); // Establece el idioma inicial
 });
-
-
 
 //detecto el scrolling para aplicar la animacion de la barra de habilidades
 window.onscroll = function(){
